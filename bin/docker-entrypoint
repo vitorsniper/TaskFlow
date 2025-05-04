@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+echo "Aguardando o banco de dados..."
+until pg_isready -h db -p 5432 -U postgres; do
+  sleep 1
+done
+
+echo "Executando db:prepare"
+bundle exec rails db:prepare
+
+echo "Executando Rails com comando: $@"
+exec bundle exec "$@"

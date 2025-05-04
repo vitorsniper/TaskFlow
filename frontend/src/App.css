@@ -1,0 +1,407 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.activities-container {
+    margin-top: 20px;
+}
+
+.activity-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.activity-info {
+    margin-bottom: 8px;
+}
+
+.activities-container .activity-item:hover {
+    background-color: #f9f9f9;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.project-header,
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-cell {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    padding: 7px;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 2px solid #ccc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.project-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.project-item:first-child {
+    text-align: left;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.floating-button:hover {
+    background-color: #0056b3;
+}
+
+.project-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+    margin-bottom: 20px;
+}
+
+.project-meta p {
+    margin: 4px 0;
+}
+
+.activity-section {
+    margin-top: 30px;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.buttons-show {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 7px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.btn-editar {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+}
+
+.btn-removal {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-removal:hover {
+    background-color: #e60000;
+}
+
+.rodape {
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: SandyBrown;
+    position: fixed;
+}
+
+.input-style {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.select-style {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.button-submit {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    flex: 1;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.activity-box {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.btn-save {
+    margin-top: 5px;
+    padding: 10px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-cancel {
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-add-activity {
+    background-color: #7FFF00;
+    color: green;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-group-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.large-textarea {
+    height: 120px;
+    resize: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.status-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.status-right label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.status-right select {
+    padding: 8px;
+    font-size: 14px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.title-field {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.status-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.status-field select {
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.full-width {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.large-textarea {
+    height: 200px;
+    width: 100%;
+    resize: vertical;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.activity-table th,
+.activity-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.activity-table th {
+    background-color: #f5f5f5;
+}
+
+.activity-table input[type="text"],
+.activity-table input[type="date"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+

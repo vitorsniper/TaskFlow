@@ -1,0 +1,5 @@
+class AddDelayedToProjects < ActiveRecord::Migration[8.0]
+  def change
+    add_column :projects, :delayed, :boolean
+  end
+end
