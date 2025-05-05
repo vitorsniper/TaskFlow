@@ -1,4 +1,4 @@
-# TaskFlow - Cadastro e Listagem de Projetos e Atividades
+# TaskFlow - Cadastro/Listagem de Projetos e Atividades | Cadastro/Listagem de Tarefas
 
 ## Descrição
 
@@ -6,6 +6,8 @@ O TaskFlow é uma aplicação que permite aos usuários cadastrar e visualizar p
 foco principal do desafio é a implementação das funcionalidades de cadastro e listagem, com uma interface simples e
 intuitiva. A solução proposta conta com a possibilidade de adicionar novas funcionalidades, como edição e exclusão, para
 ganhos de pontos extras.
+
+Além da gestão de projetos, também há uma componente de Tarefas, configuráveis entre Pendente, Em Andamento e Concluída.
 
 ## Funcionalidades
 
@@ -15,6 +17,8 @@ ganhos de pontos extras.
   com informações como título, descrição e status.
 - **Listagem de Projetos e Atividades**: A aplicação exibe uma lista de projetos cadastrados com seus respectivos status
   de conclusão, e cada projeto pode ter várias atividades associadas que são listadas.
+- **Cadastro de Tarefas**: O usuário pode criar tarefas em um quadro Kanban, para acompanhamento de atividades gerais.
+- **Listagem das Tarefas**: A aplicação exibe uma lista de tarefas cadastras para acompanhamento.
 
 ## Tecnologias Utilizadas
 
@@ -32,6 +36,17 @@ ganhos de pontos extras.
 
 - **Autenticação**:
     - **Devise**: Gem utilizada para autenticação de usuários no backend.
+
+# TaskFlow API
+
+Este é um projeto de API para gerenciamento de tarefas e projetos. Ele permite criar, listar, editar e excluir projetos
+e atividades.
+
+## Como Rodar Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/vitorsniper/taskflow-api.git
 
 ## Fluxo de Funcionalidade
 
