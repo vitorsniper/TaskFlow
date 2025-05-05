@@ -5,8 +5,6 @@ default: &default
   password: postgres
   host: db
 
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
 
 development:
   <<: *default
@@ -18,5 +16,6 @@ test:
   database: taskflow_api_test
 
 production:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  production:
+    url: <%= ENV['DATABASE_URL'] %>
+    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
